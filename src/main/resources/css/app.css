@@ -1,0 +1,10 @@
+.classic-button
+{
+    -fx-text-fill: -fx-app-el-on-sub-color;
+    -fx-background-color: -fx-app-f-sub-color;
+}
+
+.classic-button:hover
+{
+    -fx-background-color: -fx-app-s-sub-color;
+}

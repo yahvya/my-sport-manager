@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="547.0" style="-fx-background-color: -fx-app-bg;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yahaya.controllers.CreateWorkoutController">
+   <stylesheets>
+      <URL value="@../css/app.css" />
+      <URL value="@../themes/dark.css" />
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/favicon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="31.0" prefHeight="26.0" prefWidth="129.0" style="-fx-text-fill: -fx-app-text-color; -fx-font-weight: bold;" text="CRÉEZ UNE SÉANCE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="306.0" onMouseClicked="#showCreationTutorial" prefHeight="18.0" prefWidth="116.0" style="-fx-text-fill: -fx-app-text-color;" text="Tutoriel de création" underline="true">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="userInput" focusTraversable="false" layoutX="160.0" layoutY="128.0" prefHeight="38.0" prefWidth="228.0" promptText="Nom de la séance" />
+      <Button fx:id="goBackButton" disable="true" layoutX="198.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#showFormPreviousElement" styleClass="classic-button" text="Retour" />
+      <Button layoutX="283.0" layoutY="213.0" mnemonicParsing="false" onMouseClicked="#showFormNextElement" styleClass="classic-button" text="Suivant" />
+      <Label layoutX="164.0" layoutY="174.0" prefHeight="18.0" prefWidth="222.0" style="-fx-text-fill: -fx-app-text-color; -fx-alignment: center;" />
+      <Label layoutX="364.0" layoutY="306.0" onMouseClicked="#goBackToHome" prefHeight="18.0" prefWidth="43.0" style="-fx-text-fill: -fx-app-text-color;" text="Accueil" underline="true">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
