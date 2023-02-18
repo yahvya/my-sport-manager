@@ -8,14 +8,14 @@ import yahaya.Launcher;
 import yahaya.utils.callback.EmptyCallback;
 
 /**
- * gestionnaire de transition entre deux scènes dans la scène principale
+ * gestionnaire de transition entre deux scènes dans une fenêtre
  */
 public abstract class Transition {
 
     /**
      * durée de transition
      */
-    private static Duration transitionDuration = Duration.millis(400) ;
+    private static Duration transitionDuration = Duration.millis(200) ;
 
     /**
      * alias qui va utiliser la fenêtre principale

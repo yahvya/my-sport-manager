@@ -13,16 +13,16 @@ public class Workout implements Savabale{
      */
     private ArrayList<ExerciseSet> exercises;
 
+    /**
+     * nom de la séance
+     */
+    private String workoutName;
+
     @Override
     public boolean saveIn(URI dst) {
         
         return false;
     }
-
-    /**
-     * nom de la séance
-     */
-    private String workoutName;
 
     public String getWorkoutName(){
         return this.workoutName;
@@ -35,7 +35,6 @@ public class Workout implements Savabale{
     }
 
     public ArrayList<ExerciseSet> getExercices(){
-
         return this.exercises;
     }
 }

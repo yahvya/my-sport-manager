@@ -8,27 +8,31 @@ import yahaya.utils.interfaces.Playable;
 import yahaya.utils.interfaces.Savabale;
 
 /**
- * représente un exercice
+ * représente une série d'un exercice
  */
 public class ExerciseSet implements Savabale,Playable{
     /**
      * le nom de l'exercice
      */
     private String exerciseName;
+    
     /**
      *  la description de l'exercice 
      */
     private String exerciseDescription;
+
     /**
      * la durée de l'exercice en secondes
      * @attention peut être null si nombre de répétition spécifié
      */
     private Duration exerciseDuration;
+
     /**
      * la video de demonstration de l'exercice
      * @attention la video peut être null
     */
     private MediaPlayer exercisePlayer;
+
     /**
      * le nombre de répétition
      * @attention peut être null si durée d'exercice spécifié
@@ -40,10 +44,6 @@ public class ExerciseSet implements Savabale,Playable{
      */
     protected int countOfPlayTime;
 
-    public ExerciseSet(int countOfPlayTime){
-        this.countOfPlayTime = countOfPlayTime;
-    }
-
     @Override
     public boolean saveIn(URI dst) {
         
@@ -53,6 +53,10 @@ public class ExerciseSet implements Savabale,Playable{
     @Override
     public int getCountOfPlayTime() {
         return this.countOfPlayTime;
+    }
+
+    public ExerciseSet(int countOfPlayTime){
+        this.countOfPlayTime = countOfPlayTime;
     }
 
     public ExerciseSet setCountOfPlayTime(int countOfPlayTime){
